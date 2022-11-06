@@ -1,0 +1,29 @@
+#!/hint/sh
+# vim:ft=sh:noet:ts=3:sw=3:
+# man:labwc(1)
+# file:$XDG_CONFIG_HOME/labwc/autostart
+#==============================================================================#
+
+
+# man:swaybg(1)
+swaybg -c '#151515' >/dev/null 2>&1 &
+
+# man:swayidle(1)
+# man:swaylock(1)
+swayidle -w \
+	before-sleep 'swaylock -f' \
+	lock         'swaylock -f' \
+	timeout  15  'screensaver start' \
+		resume    'screensaver stop' \
+	timeout 57  'screensaver stop' \
+	timeout  58 'wlopm --off \*' \
+		resume    'wlopm --on \*' \
+	timeout  59 'loginctl lock-session' \
+	idlehint 60 >/dev/null 2>&1 &
+
+systemctl --user start labwc-session.target >/dev/null 2>&1 &
+
+
+#==============================================================================#
+#                                 END OF FILE                                  #
+#==============================================================================#

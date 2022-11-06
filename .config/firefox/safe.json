@@ -1,0 +1,147 @@
+{
+	"policies": {
+		"AppAutoUpdate": false,
+		"AutofillAddressEnabled": false,
+		"AutofillCreditCardEnabled": false,
+		"BackgroundAppUpdate": false,
+		"BlockAboutProfiles": true,
+		"CaptivePortal": false,
+		"DisableAccounts": true,
+		"DisableAppUpdate": true,
+		"DisableFeedbackCommands": true,
+		"DisableFirefoxAccounts": true,
+		"DisableFirefoxScreenshots": true,
+		"DisableFirefoxStudies": true,
+		"DisableFormHistory": true,
+		"DisableMasterPasswordCreation": true,
+		"DisablePocket": true,
+		"DisablePrivateBrowsing": true,
+		"DisableProfileImport": true,
+		"DisableSafeMode": true,
+		"DisableSetDesktopBackground": true,
+		"DisableSystemAddonUpdate": true,
+		"DisableTelemetry": true,
+		"DisplayBookmarksToolbar": "always",
+		"DisplayMenuBar": "never",
+		"DontCheckDefaultBrowser": true,
+		"HardwareAcceleration": true,
+		"HttpsOnlyMode": "force_enabled",
+		"ManualAppUpdateOnly": true,
+		"NetworkPrediction": false,
+		"NewTabPage": false,
+		"NoDefaultBookmarks": true,
+		"OfferToSaveLogins": false,
+		"OverrideFirstRunPage": "",
+		"OverridePostUpdatePage": "",
+		"PasswordManagerEnabled": false,
+		"PostQuantumKeyAgreementEnabled": true,
+		"PrimaryPassword": false,
+		"PrintingEnabled": true,
+		"PromptForDownloadLocation": false,
+		"SearchSuggestEnabled": false,
+		"ShowHomeButton": true,
+		"StartDownloadsInTempDirectory": true,
+		"TranslateEnabled": true,
+		"UseSystemPrintDialog": false,
+		"DNSOverHTTPS": {
+			"Enabled": false,
+			"ProviderURL": "",
+			"Locked": true
+		},
+		"EnableTrackingProtection": {
+			"Value": true,
+			"Cryptomining": true,
+			"Fingerprinting": true,
+			"EmailTracking": true,
+			"Locked": true
+		},
+		"EncryptedMediaExtensions": {
+			"Enabled": false,
+			"Locked": true
+		},
+		"Extensions": {
+			"Install": [
+				"https://addons.mozilla.org/firefox/downloads/latest/canvasblocker/latest.xpi"
+			]
+		},
+		"FirefoxHome": {
+			"Search": false,
+			"TopSites": false,
+			"SponsoredTopSites": false,
+			"Highlights": false,
+			"Pocket": false,
+			"SponsoredPocket": false,
+			"Snippets": false,
+			"Locked": false
+		},
+		"FirefoxSuggest": {
+			"WebSuggestions": false,
+			"SponsoredSuggestions": false,
+			"ImproveSuggest": false,
+			"Locked": true
+		},
+		"Homepage": {
+			"URL": "https://searx.be/preferences?preferences=eJx1WEuP67oN_jXNxpig7S1QdJFVgW5vgXu7NmiJsXUsiT56JPH8-pJ-xNJ4zmKM6KNFUXx8pEdBwp6CwXjr0WMAe7Hg-ww93tB__O-PiyUFVhYXyIkUucliwtvFOH6nnQK95tufIePFYRpI3_77-x9_XiLcMSIENdz-ekkDOrxRVBAuAWO2KbbkW4_PNkG3btZkWpaRfWC4EfDySqG_LJs-YprZAku9UaTx8aEhjJdoxJJ2lYlpF4U-YWjBmt47_n37D9iIF9AP8Ap1uxm0nPczY5hb49tkEu9fMOPvxpvEOlUga1dw3ST2qtVVM-uxqHbtA6UR53jTeAe-2UWbCJ3l09D3xrNb_9VD37aRlAHbONQG_vL3f4OdWNhY4_OrmUCN7MvYtiaJzHuIjZxqHti2d2MxCjyNjTMhUCgxdkHDzyYmCuXLHhR5DbtKVrYd9jSjeaPJKP4tgVw2hZd5sKnKIPtLgDi27ZYWvOzAawVualuXo1GCGGvkr20fRiPFBfJ9s6osVHcmdVmNmLaju6mrNCdt-v4wnyb0nAgRCxWL665KqavG4jw1TQHvGMTkTTlHL0YGy6sw9tQPwylXHDvj9GV5tlxAzlSG5CmacrAGy32MyPFz7avBD3QvIY34yen5dh5nsgGfOArFcVr3DaeS5KEhH6v9xA4MzZC77Z5yprK0ZWjxpsRYQ4JqN7tf_nr6Hj3fvJCt3i68Xsgq56wJ6WBiiJ-MJM7zuXLX317FIXcdyOgj8nxznQZIjimjfM0aNYYSCIhNpHt6QsBGm8AVKbW5euYejB8NlMnN55scD-_zOhFt7_dMAtAdi8PHQjgdhv6QISchuX1N1POFoxrIQigTbpNMFmYp0HhcsZQ44pwsHeuYZIIwBVOdL6PRT6R1mT4DdAHksZkygKTHGo0VwNe7IFhrvJr9usNiwbYwrs-lZ42Hwh7j-aehHL_HdmNGDg_E4pIWnZsbdpTLkspyxy8UuL6RI5f5L2QTxfQrmWjmCH4jNuyWMDeSb9EUFn1-bKLCyO1durM-33P_KT0uUkwBfLTsvjKDmUn7R1VdlrqY8Bp23ztgQtbkf3G_t3iAOCTov3lD-10VJlATvJfmxTWf9eF7R5-DKY1xT9fZEvDTnq9-Bjju74CrBPcEIj1HLKlVWBi4soRKIi6-fqf3Lptyx6UJG1nV8pi4SBPTwM4FAvIWKqKy9j4T98Yw6Q5LPRP3V-69mwJumlweGEvGnMzE3fawellfF-ccPpqMlEAHRfC5bZyZ8w2e6fAQ7Wz43baKDdk53Kwe-9Vy58TS4nLztPfin09uBaXKBajVrdDJsBU-UXQArtGm474XS9rgcGqTTvm2mu_maOpUjzgZ2P301h0p8yhQp2HkNB2Ju_bd0nOfMOKYu-xT3rlGwuc5odfh5hvajHnCkOM7KXmcUjnG6zTzcLnXgAKt5-tOLjvpT-aD1eEJX60XIm_k8UY5-3n--Y67ozTlScbbwhOJxplzMQ40SjHuacQjq9HcesLKRjucJDisGnKlo0C3oGYfuRPEoRw5KKcsZfCeFMDY2ZEUWRGEh3FIxfppumoE4an9xRMbd5Ovs0FHNMav4M9MdegF5EAHdUYnVAul17BMbIvbv8A0f3GloBIl5owrZC19ab_qk-w9gOP5eKjHF6PSJ_lKjZt5SuCm37xJWldzxm-__fNVBAo_PbhqP_1AHM_IucQ2vKpGDw_J0mNzyN3co9tbwIQY1jAezV2Kjb-GRhlEn9gVohnq-VHWZztCZmYvNVqpIubQEmMSH0Nt6wqd1K3wiTmYt0FVZBQfvfB2sZVnpySzmrjgC5U8eKBbvjU2RzzB2oGd5YvtkgGOh9xqZA7wwBNwPX9LLPDJ6hWurs0d_GjJayoPee80PVWTcJf-UXyATGN_7Wkn7wv3uuqbTsyf5LqVBp4Kvq7rMCzIyXA14H0k4Vfi3AiS7NzhuKXGA0GmcRmT328c8_cTJaVC8S5n627dG0vMH56jggd2n-dCY4_mc-Av2gIh0gFB19AyOB6X3IbZU5A2vLr-hp0cYJzujjN-GKbYYykzA49AWEA8CSseoCT7XgcaKCWZ6XmCJixsTpX2GYY67gtQ2_nm34JaR1O9UrHg0TgYFpJehsz9xJLsTm4qhSe_lMIlMY_81FlLPe1nLJ8Rk7GUinMpaG_GEniZkTwndRNnT352RTLEH9N1ehYqnymFqymAOTtn93sd_-aYbOaaiDfpsq_rtroqsCozI1PYGvAhGniqZyLeCKiUELTrv4GegaeQk1h6estzOtMuTxHvmvzeABmsN9FJUUR7b42_00nC9rZcjmo8S8LyedXyxz8b6GTOufBEwEPu7f95I0ZP",
+			"StartPage": "previous-session",
+			"Locked": true
+		},
+		"Permissions": {
+			"Camera": {
+				"BlockNewRequests": true,
+				"Locked": true
+			},
+			"Microphone": {
+				"BlockNewRequests": true,
+				"Locked": true
+			},
+			"Autoplay": {
+				"BlockNewRequests": true,
+				"Locked": true
+			},
+			"Location": {
+				"BlockNewRequests": true,
+				"Locked": true
+			},
+			"Notifications": {
+				"BlockNewRequests": true,
+				"Locked": true
+			},
+			"VirtualReality": {
+				"BlockNewRequests": true,
+				"Locked": true
+			}
+		},
+		"PictureInPicture": {
+			"Enabled": true,
+			"Locked": true
+		},
+		"PopupBlocking": {
+			"Default": true,
+			"Locked": true
+		},
+		"Proxy": {
+			"Mode": "none",
+			"Locked": true
+		},
+		"SanitizeOnShutdown": {
+			"Cache": false,
+			"Cookies": false,
+			"Downloads": true,
+			"FormData": true,
+			"History": false,
+			"Sessions": false,
+			"SiteSettings": false,
+			"OfflineApps": false,
+			"Locked": true
+		},
+		"UserMessaging": {
+			"WhatsNew": false,
+			"ExtensionRecommendations": false,
+			"FeatureRecommendations": false,
+			"UrlbarInterventions": false,
+			"SkipOnboarding": true,
+			"MoreFromMozilla": false,
+			"Locked": true
+		}
+	}
+}

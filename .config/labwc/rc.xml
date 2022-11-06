@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- vim:ft=xml:noet:ts=3:sw=3:
+>  | file:$XDG_CONFIG_HOME/labwc/rc.xml
+<============================================================================-->
+
+
+<labwc_config>
+	<core reuseOutputMode="yes" />
+
+	<placement policy="cascade" />
+
+	<windowSwitcher allWorkspaces="yes">
+		<fields>
+			<field content="custom" format="%i %t" width="100%" />
+		</fields>
+	</windowSwitcher>
+
+	<focus followMouse="yes" />
+
+	<snapping>
+		<overlay>
+			<delay inner="0" outer="0" />
+		</overlay>
+	</snapping>
+
+	<regions>
+		<region name="up-left" x="0%" y="0%" width="50%" height="50%" />
+		<region name="up-right" x="50%" y="0%" width="50%" height="50%" />
+		<region name="down-left" x="0%" y="50%" width="50%" height="50%" />
+		<region name="down-right" x="50%" y="50%" width="50%" height="50%" />
+	</regions>
+
+	<desktops number="1" popupTime="0" prefix="" />
+
+	<theme name="default" cornerRadius="0">
+		<font place="ActiveWindow" name="sans-serif" size="12" weight="bold" />
+		<font place="InactiveWindow" name="sans-serif" size="12" />
+		<font place="MenuItem" name="sans" size="12" />
+		<font place="OnScreenDisplay" name="monospace" size="12" />
+	</theme>
+
+	<resize drawContents="no" />
+
+	<keyboard numlock="on" repeatDelay="200" repeatRate="30">
+		<keybind key="C-A-r">
+			<action name="Reconfigure" />
+		</keybind>
+
+		<keybind key="C-A-Backspace">
+			<action name="Exit" />
+		</keybind>
+
+		<keybind key="W-Delete">
+			<action name="Close" />
+		</keybind>
+
+		<keybind key="W-Escape">
+			<action name="Execute" command="loginctl lock-session" />
+		</keybind>
+
+		<!--
+		<keybind key="W-1">
+			<action name="GoToDesktop" to="1" />
+		</keybind>
+		<keybind key="W-2">
+			<action name="GoToDesktop" to="2" />
+		</keybind>
+		<keybind key="W-3">
+			<action name="GoToDesktop" to="3" />
+		</keybind>
+		<keybind key="W-4">
+			<action name="GoToDesktop" to="4" />
+		</keybind>
+		<keybind key="W-5">
+			<action name="GoToDesktop" to="5" />
+		</keybind>
+		<keybind key="W-6">
+			<action name="GoToDesktop" to="6" />
+		</keybind>
+		<keybind key="W-7">
+			<action name="GoToDesktop" to="7" />
+		</keybind>
+		<keybind key="W-8">
+			<action name="GoToDesktop" to="8" />
+		</keybind>
+		<keybind key="W-9">
+			<action name="GoToDesktop" to="9" />
+		</keybind>
+
+		<keybind key="W-comma">
+			<action name="GoToDesktop" to="left" wrap="yes" />
+		</keybind>
+		<keybind key="W-period">
+			<action name="GoToDesktop" to="right" wrap="yes" />
+		</keybind>
+
+		<keybind key="W-S-1">
+			<action name="SendToDesktop" to="1" follow="no" />
+		</keybind>
+		<keybind key="W-S-2">
+			<action name="SendToDesktop" to="2" follow="no" />
+		</keybind>
+		<keybind key="W-S-3">
+			<action name="SendToDesktop" to="3" follow="no" />
+		</keybind>
+		<keybind key="W-S-4">
+			<action name="SendToDesktop" to="4" follow="no" />
+		</keybind>
+		<keybind key="W-S-5">
+			<action name="SendToDesktop" to="5" follow="no" />
+		</keybind>
+		<keybind key="W-S-6">
+			<action name="SendToDesktop" to="6" follow="no" />
+		</keybind>
+		<keybind key="W-S-7">
+			<action name="SendToDesktop" to="7" follow="no" />
+		</keybind>
+		<keybind key="W-S-8">
+			<action name="SendToDesktop" to="8" follow="no" />
+		</keybind>
+		<keybind key="W-S-9">
+			<action name="SendToDesktop" to="9" follow="no" />
+		</keybind>
+
+		<keybind key="W-S-comma">
+			<action name="SendToDesktop" to="left" follow="no" />
+		</keybind>
+		<keybind key="W-S-period">
+			<action name="SendToDesktop" to="right" follow="no" />
+		</keybind>
+		-->
+
+		<keybind key="W-S-h" >
+			<action name="SnapToEdge" direction="left" />
+		</keybind>
+		<keybind key="W-S-j" >
+			<action name="SnapToEdge" direction="down" />
+		</keybind>
+		<keybind key="W-S-k" >
+			<action name="SnapToEdge" direction="up" />
+		</keybind>
+		<keybind key="W-S-l" >
+			<action name="SnapToEdge" direction="right" />
+		</keybind>
+
+		<keybind key="W-S-Left" >
+			<action name="SnapToEdge" direction="left" />
+		</keybind>
+		<keybind key="W-S-Down" >
+			<action name="SnapToEdge" direction="down" />
+		</keybind>
+		<keybind key="W-S-Up" >
+			<action name="SnapToEdge" direction="up" />
+		</keybind>
+		<keybind key="W-S-Right" >
+			<action name="SnapToEdge" direction="right" />
+		</keybind>
+
+		<keybind key="A-period" >
+			<action name="NextWindow" />
+		</keybind>
+		<keybind key="A-comma" >
+			<action name="PreviousWindow" />
+		</keybind>
+
+		<keybind key="W-a">
+			<action name="ToggleMaximize" />
+		</keybind>
+		<keybind key="W-f">
+			<action name="ToggleFullscreen" />
+		</keybind>
+
+		<keybind key="W-C-S-space">
+			<action name="ToggleOmnipresent" />
+		</keybind>
+
+		<keybind key="W-S-minus">
+			<action name="Iconify" />
+		</keybind>
+
+		<keybind key="W-Return">
+			<action name="Execute" command="footclient -N" />
+		</keybind>
+		<keybind key="W-A-Return">
+			<action name="Execute" command="foot" />
+		</keybind>
+
+		<keybind key="Menu">
+			<action name="Execute" command="xdgctl -Amenu" />
+		</keybind>
+		<keybind key="A-Menu">
+			<action name="Execute" command="wmenu-run" />
+		</keybind>
+
+		<keybind key="Print">
+			<action name="Execute" command="glurp" />
+		</keybind>
+		<keybind key="S-Print">
+			<action name="Execute" command="glurp -a" />
+		</keybind>
+
+		<keybind key="Insert">
+			<action name="Execute" command="emoji type" />
+		</keybind>
+		<keybind key="C-Insert">
+			<action name="Execute" command="unicode type" />
+		</keybind>
+
+		<keybind key="XF86AudioRaiseVolume" allowWhenLocked="true">
+			<action name="Execute" command="pamixer -i5" />
+		</keybind>
+		<keybind key="XF86AudioLowerVolume" allowWhenLocked="true">
+			<action name="Execute" command="pamixer -d5" />
+		</keybind>
+		<keybind key="XF86AudioMute" allowWhenLocked="true">
+			<action name="Execute" command="pamixer -t" />
+		</keybind>
+
+		<keybind key="XF86MonBrightnessUp" allowWhenLocked="true">
+			<action name="Execute" command="light -A 5" />
+		</keybind>
+		<keybind key="XF86MonBrightnessDown" allowWhenLocked="true">
+			<action name="Execute" command="light -U 5" />
+		</keybind>
+
+		<keybind key="W-p" allowWhenLocked="true">
+			<action name="Execute" command="wlopm --toggle *" />
+		</keybind>
+
+		<keybind key="W-Pause">
+			<action name="ToggleKeybinds" />
+		</keybind>
+	</keyboard>
+
+	<mouse>
+		<context name="Frame">
+			<mousebind button="W-Left" action="Press">
+				<action name="Raise" />
+			</mousebind>
+			<mousebind button="W-Left" action="Drag">
+				<action name="Move" />
+			</mousebind>
+
+			<mousebind button="W-Right" action="Press">
+				<action name="Raise" />
+			</mousebind>
+			<mousebind button="W-Right" action="Drag">
+				<action name="Resize" />
+			</mousebind>
+		</context>
+
+		<context name="Top">
+			<mousebind button="Left" action="Drag">
+				<action name="Resize" />
+			</mousebind>
+		</context>
+		<context name="Left">
+			<mousebind button="Left" action="Drag">
+				<action name="Resize" />
+			</mousebind>
+		</context>
+		<context name="Right">
+			<mousebind button="Left" action="Drag">
+				<action name="Resize" />
+			</mousebind>
+		</context>
+		<context name="Bottom">
+			<mousebind button="Left" action="Drag">
+				<action name="Resize" />
+			</mousebind>
+		</context>
+		<context name="TRCorner">
+			<mousebind button="Left" action="Drag">
+				<action name="Resize" />
+			</mousebind>
+		</context>
+		<context name="BRCorner">
+			<mousebind button="Left" action="Drag">
+				<action name="Resize" />
+			</mousebind>
+		</context>
+		<context name="TLCorner">
+			<mousebind button="Left" action="Drag">
+				<action name="Resize" />
+			</mousebind>
+		</context>
+		<context name="BLCorner">
+			<mousebind button="Left" action="Drag">
+				<action name="Resize" />
+			</mousebind>
+		</context>
+
+		<context name="TitleBar">
+			<mousebind button="Left" action="Press">
+				<action name="Raise" />
+			</mousebind>
+			<mousebind button="Right" action="Click">
+				<action name="Raise" />
+			</mousebind>
+		</context>
+
+		<context name="Title">
+			<mousebind button="Left" action="Drag">
+				<action name="Move" />
+			</mousebind>
+			<mousebind button="Left" action="DoubleClick">
+				<action name="ToggleMaximize" />
+			</mousebind>
+			<mousebind button="Right" action="Click">
+				<action name="ShowMenu" menu="client-menu" />
+			</mousebind>
+		</context>
+
+		<context name="Maximize">
+			<mousebind button="Left" action="Click">
+				<action name="ToggleMaximize" />
+			</mousebind>
+			<mousebind button="Right" action="Click">
+				<action name="ToggleMaximize" direction="horizontal" />
+			</mousebind>
+			<mousebind button="Middle" action="Click">
+				<action name="ToggleMaximize" direction="vertical" />
+			</mousebind>
+		</context>
+
+		<context name="WindowMenu">
+			<mousebind button="Left" action="Click">
+				<action name="ShowMenu" menu="client-menu" />
+			</mousebind>
+			<mousebind button="Right" action="Click">
+				<action name="ShowMenu" menu="client-menu" />
+			</mousebind>
+		</context>
+
+		<context name="Iconify">
+			<mousebind button="Left" action="Click">
+				<action name="Iconify" />
+			</mousebind>
+		</context>
+
+		<context name="Close">
+			<mousebind button="Left" action="Click">
+				<action name="Close" />
+			</mousebind>
+		</context>
+
+		<context name="Client">
+			<mousebind button="Left" action="Press">
+				<action name="Raise" />
+			</mousebind>
+			<mousebind button="Middle" action="Press">
+				<action name="Raise" />
+			</mousebind>
+			<mousebind button="Right" action="Press">
+				<action name="Raise" />
+			</mousebind>
+		</context>
+
+		<context name="Root">
+			<mousebind button="Left" action="Press">
+				<action name="ShowMenu" menu="root-menu" />
+			</mousebind>
+			<mousebind button="Right" action="Press">
+				<action name="ShowMenu" menu="root-menu" />
+			</mousebind>
+			<mousebind button="Middle" action="Press">
+				<action name="ShowMenu" menu="root-menu" />
+			</mousebind>
+		</context>
+	</mouse>
+
+	<libinput>
+		<device category="touchpad" disableWhileTyping="yes" pointerSpeed="0.5" sendEventsMode="disabledOnExternalMouse" tap="yes" />
+	</libinput>
+
+	<windowRules>
+		<windowRule identifier="screensaver" serverDecoration="no" skipTaskbar="yes" skipWindowSwitcher="yes" ignoreFocusRequest="yes" ignoreConfigureRequest="yes">
+			<action name="ToggleFullscreen" />
+			<action name="ToggleOmnipresent" />
+		</windowRule>
+	</windowRules>
+</labwc_config>
+
+
+<!--===========================================================================>
+>                                 END OF FILE                                  <
+<============================================================================-->
